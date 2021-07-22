@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="ecommerce, products, delivery, market, buy">
+    <meta name="description" content="Everything you love and want, here at Arrived.com.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Arrived - More Products, More Efficient</title>
+</head>
+<body>
+    <a id="top"></a>
+    <nav>
+        <div class="logo-and-name">
+            <img src="images/shooting-star.png" alt="" id="rocket" height="65" width="65">
+            <h1 id="company-name">Arrived</h1>
+        </div>
+        <div class="besides-logo">
+            <div class="search-container">
+                <form>
+                    <input type="text" spellcheck="true" id="search-bar" placeholder="Search">
+                    <button type="submit" id="search-button"><img src="images/search-icon.svg" alt="" id="search-icon"></button>
+                </form>
+            </div>
+            <img src="images/shopping-cart.svg" alt="" id="shopping-cart" height="35">
+            <span id="account-box">
+                <img src="images/account-circle.svg" alt="" id="account" height="35">
+                <div id="account-name"></div>
+            </span>
+        </div> 
+    </nav>
+    <section class="navbar">
+        <div class="nav-item" onclick="openSideBar()">☰ All</div>
+        <div class="nav-item">Deals</div>
+        <div class="nav-item">Trending</div> 
+        <div class="nav-item">New</div>
+        <div class="nav-item">Upcoming</div>
+    </section>
+    <section id="all-content-div">
+        <section class="departments">
+            <div id="dep-close">
+                <h2 id="departments-title">Departments</h2>
+                <img src="images/close-white.svg" class="close-btn" alt="Close sidebar" onclick="closeSideBar()">
+            </div>
+            <ul id="department-list">
+                <div class="department">
+                    <li>Home + Garden</li>
+                    <img src="images/chevron-right.svg" class="right-arrow" alt="">
+                </div>
+                <div class="department">
+                    <li>Tools + Equipment</li>
+                    <img src="images/chevron-right.svg" class="right-arrow" alt="">
+                </div>
+                <div class="department">
+                    <li>Clothing / Fashion / Jewelry</li>
+                    <img src="images/chevron-right.svg" class="right-arrow" alt="">
+                </div>
+                <div class="department">
+                    <li>Grocery</li>
+                    <img src="images/chevron-right.svg" class="right-arrow" alt="">
+                </div>
+                <div class="department">
+                    <li>Movies + Entertainment</li>
+                    <img src="images/chevron-right.svg" class="right-arrow" alt="">
+                </div>
+                <div class="department">
+                    <li>Parties + Celebrations</li>
+                    <img src="images/chevron-right.svg" class="right-arrow" alt="">
+                </div>
+                <div class="department">
+                    <li>Books</li>
+                    <img src="images/chevron-right.svg" class="right-arrow" alt="">
+                </div>
+                <div class="department">
+                    <li>Electronics</li>
+                    <img src="images/chevron-right.svg" class="right-arrow" alt="">
+                </div>
+                <div class="department">
+                    <li>Sports + Fitness Equipment</li>
+                    <img src="images/chevron-right.svg" class="right-arrow" alt="">
+                </div>
+                <div class="department">
+                    <li>Toys / Baby / Kids</li>
+                    <img src="images/chevron-right.svg" class="right-arrow" alt="">
+                </div>
+                <div class="department">
+                    <li>School + Academics</li>
+                    <img src="images/chevron-right.svg" class="right-arrow" alt="">
+                </div>
+                <div class="department">
+                    <li>Pet Supplies</li>
+                    <img src="images/chevron-right.svg" class="right-arrow" alt="">
+                </div>
+                <div class="department">
+                    <li>Industrial</li>
+                    <img src="images/chevron-right.svg" class="right-arrow" alt="">
+                </div>
+            </ul>
+        </section>
+        <section class="settings-help">
+            <h2 id="settings-help-title">Settings & Help</h2>
+            <ul id="extra-service-list">
+                <div class="service">
+                    <li>Settings</li>
+                    <img src="images/settings.svg" class="settings-icon" alt="">
+                </div>
+                <div class="service">
+                    <li>Help</li>
+                    <img src="images/chevron-right.svg" class="right-arrow" alt="">
+                </div>
+                <div class="service">
+                    <li>Customer Service</li>
+                    <img src="images/chevron-right.svg" class="right-arrow" alt="">
+                </div>
+            </ul>
+        </section>
+    </section>
+    <h2 id="most-bought-decl">Most Bought Item</h2>
+    <div id="most-bought-item">
+        <img class="most-bought-image" src="https://target.scene7.com/is/image/Target/GUEST_c6d1bfca-3003-4245-b46e-f7f94cf6908c?wid=488&hei=488&fmt=pjpeg" alt="A beach ball">
+        <div id="most-bought-desc">
+            <h2 class="most-bought-name">Beach Ball for Kids (Multicolored)</h2>
+            <div id="most-bought-stats">
+                <p class="price">$4.99</p>
+                <p class="star-rating">
+                    <i class="fa fa-star oranged"></i>
+                    <i class="fa fa-star oranged"></i>
+                    <i class="fa fa-star oranged"></i>
+                    <i class="fa fa-star oranged"></i>
+                    <i class="fa fa-star oranged"></i>
+                </p>
+                <p class="shipping-cost">Free Shipping</p>
+            </div>
+        </div>
+        <div id="most-bought-btns">
+            <button class="buyme">Buy</button>
+            <button class="addtocart">+ Add to Cart</button>
+        </div>
+    </div>
+    <h2 id="products-decl">Other Products You May Like</h2>
+    <section class="products">
+        <div class="product" id="first-product">
+            <h2 class="product-name">Hardwood Table</h2>
+            <img class="product-img" src="https://www.smow.com/pics/mu-063-000/muuto-linear-wood-table-h74xl200xb90-01_zoom.jpg" alt="Wood table">
+            <p class="price">$39.99</p>
+            <p class="star-rating">
+                <i class="fa fa-star oranged"></i>
+                <i class="fa fa-star oranged"></i>
+                <i class="fa fa-star oranged"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </p>
+            <p class="shipping-cost">Shipping: $6.75</p>
+        </div>
+        <div class="product" id="second-product">
+            <h2 class="product-name">Microsoft Surface Laptop Computer 13.5" Touch-Screen</h2>
+            <img class="product-img" src="https://images-na.ssl-images-amazon.com/images/I/71h6PpGaz9L._AC_SL1500_.jpg" alt="Microsoft Surface laptop computer">
+            <p class="price">$1,149.99</p>
+            <p class="star-rating">
+                <i class="fa fa-star oranged"></i>
+                <i class="fa fa-star oranged"></i>
+                <i class="fa fa-star oranged"></i>
+                <i class="fa fa-star oranged"></i>
+                <i class="fa fa-star oranged"></i>
+            </p>
+            <p class="shipping-cost">Free Shipping</p>
+        </div>
+        <div class="product" id="third-product">
+            <h2 class="product-name">Fitbit Versa 2 Smartwatch</h2>
+            <img class="product-img" src="https://www.fitbit.com/global/content/dam/fitbit/global/pdp/versa2/hero-static/black-carbon-aluminum/versa2-3qtr-black.png" alt="Fitbit smartwatch">
+            <p class="price">$199.99</p>
+            <p class="star-rating">
+                <i class="fa fa-star oranged"></i>
+                <i class="fa fa-star oranged"></i>
+                <i class="fa fa-star oranged"></i>
+                <i class="fa fa-star oranged"></i>
+                <i class="fa fa-star"></i>
+            </p>
+            <p class="shipping-cost">Shipping: $2.50</p>
+        </div>
+        <div class="product" id="fourth-product">
+            <h2 class="product-name">Soft & Cuddly Teddy Bear 21.5"</h2>
+            <img class="product-img" src="https://target.scene7.com/is/image/Target/GUEST_a6fdb107-33d6-4ce2-8f67-28698cc3285a?wid=488&hei=488&fmt=pjpeg" alt="Brown teddy bear">
+            <p class="price">$22.99</p>
+            <p class="star-rating">
+                <i class="fa fa-star oranged"></i>
+                <i class="fa fa-star oranged"></i>
+                <i class="fa fa-star oranged"></i>
+                <i class="fa fa-star oranged"></i>
+                <i class="fa fa-star oranged"></i>
+            </p>
+            <p class="shipping-cost">Shipping: $0.50</p>
+        </div>
+        <div class="product">
+            <h2 class="product-name">Lovely Table Lamp 27.5" with Fabric Shade</h2>
+            <img src="https://mobileimages.lowes.com/productimages/c5492ce9-f725-43da-a043-92e8f8796edd/10524199.jpg?size=pdhi" alt="A nice table lamp" class="product-img">
+            <p class="price">$34.99</p>
+            <p class="star-rating">
+                <i class="fa fa-star oranged"></i>
+                <i class="fa fa-star oranged"></i>
+                <i class="fa fa-star oranged"></i>
+                <i class="fa fa-star oranged"></i>
+                <i class="fa fa-star"></i>
+            </p>
+            <p class="shipping-cost">Free Shipping</p>
+        </div>
+        <div class="product">
+            <h2 class="product-name">Apple iPad Mini Wi-Fi 64GB - Gray</h2>
+            <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-mini-select-wifi-spacegray-201911_FMT_WHH?wid=1000&hei=1000&fmt=jpeg&qlt=95&.v=1573825365923" class="product-img" alt="Apple iPad Mini">
+            <p class="price">$399.99</p>
+            <p class="star-rating">
+                <i class="fa fa-star oranged"></i>
+                <i class="fa fa-star oranged"></i>
+                <i class="fa fa-star oranged"></i>
+                <i class="fa fa-star oranged"></i>
+                <i class="fa fa-star oranged"></i>
+            </p>
+            <p class="shipping-cost">Shipping: $5.00</p>
+        </div>
+        <div class="product">
+            <h2 class="product-name">Ticonderoga Pencil #2 Lead 12-Pack</h2>
+            <img src="https://media.officedepot.com/image/upload/b_rgb:FFFFFF,c_pad,dpr_1.0,f_auto,h_666,q_auto,w_500/c_pad,h_666,w_500/v1/products/314417/314417_o01_ticonderoga_wood_cased_pencils_12_count_093019?pgw=1" alt="A pack of pencils" class="product-img">
+            <p class="price">$5.00</p>
+            <p class="star-rating">
+                <i class="fa fa-star oranged"></i>
+                <i class="fa fa-star oranged"></i>
+                <i class="fa fa-star oranged"></i>
+                <i class="fa fa-star oranged"></i>
+                <i class="fa fa-star"></i>
+            </p>
+            <p class="shipping-cost">Free Shipping</p>
+        </div>
+        <div class="product">
+            <h2 class="product-name">Magnifying Glass - 2x Magnification</h2>
+            <img src="https://cdn.shopify.com/s/files/1/2581/7358/products/RG190004_1_413x@3x.progressive.jpg" alt="magnifying glass" class="product-img">
+            <p class="price">$11.99</p>
+            <p class="star-rating">
+                <i class="fa fa-star oranged"></i>
+                <i class="fa fa-star oranged"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </p>
+            <p class="shipping-cost">Free Shipping</p>
+        </div>
+    </section>
+    <div class="back-to-top-div">
+        <a href="#top">
+            <button class="back-to-top">Jump back to Top</button>
+        </a>
+    </div>
+    <footer>
+        <div id="corp-name-copyright">
+            <p id="corp-name">Arrived, Inc.</p>
+            <p id="copyright">&copy;2021</p>
+        </div>
+        <div id="footer-stuff">
+            <div id="signing-div">
+                <div class="signing-btns">
+                    <button class="register">Register</button>
+                    <button class="sign-in">Sign In</button>
+                </div>
+                <p id="email-decl">To get notifications, updates, <br> and special discounts, <br> add your email address.</p>
+                <form id="emailer">
+                    <input type="email" spellcheck="true" id="email-bar" placeholder="Email">
+                    <button type="submit" id="email-submit"> >>> </button>
+                </form>
+            </div>
+            <div id="who-we-are">
+                <h3 id="who-we-are-title">Who We Are</h3>
+                <ul id="who-we-are-list">
+                    <li><a class="footer-item" href="#">Careers</a></li>
+                    <li><a class="footer-item" href="#">About Arrived</a></li>
+                    <li><a class="footer-item" href="#">Investors</a></li>
+                </ul>
+            </div>
+            <div id="navigate-div">
+                <h3 id="navigate-title">Navigate</h3>
+                <ul id="navigation-list">
+                    <li><a class="footer-item" href="#">Home + Garden</a></li> 
+                    <li><a class="footer-item" href="#">Tools + Equipment</a></li> 
+                    <li><a class="footer-item" href="#">Clothing / Fashion / Jewelry</a></li>
+                    <li><a class="footer-item" href="#">Grocery</a></li>
+                    <li><a class="footer-item" href="#">Movies + Entertainment</a></li>
+                    <li><a class="footer-item" href="#">Parties + Celebrations</a></li>
+                    <li><a class="footer-item" href="#">Books</a></li>
+                    <li><a class="footer-item" href="#">Electronics</a></li>
+                    <li><a class="footer-item" href="#">Sports + Fitness Equipment</a></li>
+                    <li><a class="footer-item" href="#">Toys / Baby / Kids</a></li>
+                    <li><a class="footer-item" href="#">School + Academics</a></li>
+                    <li><a class="footer-item" href="#">Pet Supplies</a></li>
+                    <li><a class="footer-item" href="#">Industrial</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="legal-matters">
+            <div class="legal-matter">Privacy Policy</div>
+            <div class="legal-matter">Terms of Use</div>
+            <div class="legal-matter">Activity-Based Ads</div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
