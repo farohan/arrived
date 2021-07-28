@@ -72,6 +72,7 @@ form {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     padding-left: 1.5rem;
+    font-size: 1.35rem;
     height: 4rem;
     width: 45rem;
 }
@@ -201,13 +202,10 @@ form {
     background: darkgray;
 }
 
-.products {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-#most-bought-decl, #products-decl {
+#most-bought-decl,
+#trending-items-decl,
+#trending-depts-decl, 
+#products-decl {
     font-size: 3rem;
     margin-top: 4rem;
     margin-left: 1rem;
@@ -229,6 +227,7 @@ form {
 
 .most-bought-image {
     width: 20vw;
+    object-fit: cover;
 }
 
 .most-bought-name {
@@ -257,6 +256,29 @@ form {
     transform: translate(4px, -4px);
 }
 
+.trending-items {
+    display: flex;
+    justify-content: space-around;
+}
+
+.trending-item {
+    width: 30vw;
+    max-height: 50rem;
+    overflow: auto;
+    border: 3px solid var(--product-border-color);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
 .product {
     width: 20vw;
     margin-top: 2.5rem;
@@ -270,7 +292,9 @@ form {
     transition: background-color 0.3s;
 }
 
-.product:hover, #most-bought-item:hover {
+.product:hover, 
+#most-bought-item:hover,
+.trending-item:hover {
     border-color: var(--product-hover-border-color);
     background-color: var(--product-hover-background-color);
 }
@@ -282,8 +306,11 @@ form {
     margin-top: 0;
 }
 
-.product-name {
+.product-name,
+.trending-name {
     font-size: 2rem;
+    margin-left: 5px;
+    margin-right: 5px;
     text-align: center;
 }
 
@@ -324,6 +351,7 @@ form {
 .back-to-top {
     height: 5rem;
     width: 50rem;
+    font-size: 1.5rem;
     border: none;
     border-radius: 5px; 
     background-color: var(--secondary-color);
@@ -370,6 +398,7 @@ footer {
 .register, .sign-in {
     height: 3.75rem;
     width: 15rem;
+    font-size: 1.35rem;
     border: none;
     border-radius: 5px;
     background-color: var(--secondary-color);
@@ -395,6 +424,7 @@ footer {
 #email-bar {
     width: 20vw;
     height: 35px;
+    font-size: 1.35rem;
     border: none;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -458,6 +488,7 @@ footer {
     width: 33vw;
     color: white;
     font-size: 1.25rem;
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
