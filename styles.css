@@ -5,6 +5,7 @@
     --accent-color: gold;
     --accent-color-hover: rgb(23, 206, 196);
     --product-border-color: rgba(0, 0, 0, 0.25);
+    --product-border-radius: 10px;
     --product-hover-border-color: rgba(0, 0, 0, 0.55);
     --product-hover-background-color: rgba(0, 0, 0, 0.175);
 }
@@ -213,13 +214,13 @@ form {
 }
 
 #most-bought-item {
-    border: 3px solid var(--product-border-color);
     min-height: 25rem;
     max-height: 30rem;
     padding: 1rem;
     margin-left: 1rem;
     margin-right: 1rem;
-    border-radius: 10px;
+    border: 3px solid var(--product-border-color);
+    border-radius: var(--product-border-radius);
     display: flex;
     justify-content: space-around;
     transition: background-color 0.3s;
@@ -266,11 +267,46 @@ form {
     max-height: 50rem;
     overflow: auto;
     border: 3px solid var(--product-border-color);
-    border-radius: 10px;
+    border-radius: var(--product-border-radius);
     display: flex;
     flex-direction: column;
     align-items: center;
     transition: background-color 0.3s;
+}
+
+.trending-depts {
+    padding: 0 1.5rem;
+    margin: 0 3rem;
+    overflow-y: auto;
+    white-space: nowrap;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.trending-dept {
+    text-align: center;
+    padding: 1.5rem;
+    margin: 1rem;
+    border: 3px solid var(--product-border-color);
+    border-radius: var(--product-border-radius);
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.trending-dept:hover {
+    background-color: var(--product-hover-background-color);
+    border-color: transparent;
+}
+
+.dept-image {
+    width: 20vh;
+}
+
+.dept-arrow {
+    height: 100px;
+    border: none;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
 }
 
 .products {
@@ -285,7 +321,7 @@ form {
     max-height: 60rem;
     overflow: auto;
     border: 3px solid var(--product-border-color);
-    border-radius: 10px;
+    border-radius: var(--product-border-radius);
     display: flex;
     flex-direction: column;
     align-items: center;
