@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="ecommerce, products, delivery, market, buy">
     <meta name="description" content="Everything you love and want, here at Arrived.">
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Arrived - More Products, More Efficient</title>
 </head>
@@ -184,32 +184,34 @@
     </section>
     <h2 id="trending-depts-decl">Trending Departments</h2>
     <section class="trending-depts">
-        <button class="dept-arrow left-arrow"> ←←← </button>
-        <div class="trending-dept">
-            <img class="dept-image" src="https://image.flaticon.com/icons/png/128/619/619032.png" alt="drawing of a house">
-            <h2 class="trending-dept-name">Home</h2>
+        <div class="trending-depts-array">
+            <button class="dept-arrow left-arrow"><img src="images/chevron-left.svg" alt=""></button>
+            <div class="trending-dept">
+                <img class="dept-image" src="https://image.flaticon.com/icons/png/128/619/619032.png" alt="drawing of a house">
+                <h2 class="trending-dept-name">Home</h2>
+            </div>
+            <div class="trending-dept">
+                <img class="dept-image" src="https://image.flaticon.com/icons/png/128/1261/1261163.png" alt="drawing of grocery">
+                <h2 class="trending-dept-name">Grocery</h2>
+            </div>
+            <div class="trending-dept">
+                <img class="dept-image" src="https://image.flaticon.com/icons/png/128/3163/3163478.png" alt="drawing of popcorn and soda">
+                <h2 class="trending-dept-name">Movies + Entertainment</h2>
+            </div>
+            <div class="trending-dept">
+                <img class="dept-image" src="https://image.flaticon.com/icons/png/128/167/167755.png" alt="drawing of a book">
+                <h2 class="trending-dept-name">Books</h2>
+            </div>
+            <div class="trending-dept">
+                <img class="dept-image" src="https://image.flaticon.com/icons/png/128/857/857418.png" alt="drawing of a football, soccerball, and basketball">
+                <h2 class="trending-dept-name">Sports + Fitness Equipment</h2>
+            </div>
+            <div class="trending-dept">
+                <img class="dept-image" src="https://image.flaticon.com/icons/png/128/186/186239.png" alt="drawing of a smartphone">
+                <h2 class="trending-dept-name">Electronics</h2>
+            </div>
+            <button class="dept-arrow right-arrow"><img src="images/chevron-right.svg" alt=""></button>
         </div>
-        <div class="trending-dept">
-            <img class="dept-image" src="https://image.flaticon.com/icons/png/128/1261/1261163.png" alt="drawing of grocery">
-            <h2 class="trending-dept-name">Grocery</h2>
-        </div>
-        <div class="trending-dept">
-            <img class="dept-image" src="https://image.flaticon.com/icons/png/128/3163/3163478.png" alt="drawing of popcorn and soda">
-            <h2 class="trending-dept-name">Movies + Entertainment</h2>
-        </div>
-        <div class="trending-dept">
-            <img class="dept-image" src="https://image.flaticon.com/icons/png/128/167/167755.png" alt="drawing of a book">
-            <h2 class="trending-dept-name">Books</h2>
-        </div>
-        <div class="trending-dept">
-            <img class="dept-image" src="https://image.flaticon.com/icons/png/128/857/857418.png" alt="drawing of a football, soccerball, and basketball">
-            <h2 class="trending-dept-name">Sports + Fitness Equipment</h2>
-        </div>
-        <div class="trending-dept">
-            <img class="dept-image" src="https://image.flaticon.com/icons/png/128/186/186239.png" alt="drawing of a smartphone">
-            <h2 class="trending-dept-name">Electronics</h2>
-        </div>
-        <button class="dept-arrow rigth-arrow"> →→→ </button>
     </section>
     <h2 id="products-decl">Other Products You May Like</h2>
     <section class="products">
@@ -385,7 +387,7 @@
         </div>
     </footer>
 
-    <script src="app.js"></script>
-    <script src="products.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/products.js"></script>
 </body>
 </html>
