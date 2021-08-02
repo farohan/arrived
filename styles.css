@@ -177,7 +177,7 @@ form {
 #departments-title, #settings-help-title {
     color: black;
     font-size: 3rem;
-    margin-left: 1rem;
+    margin: 2.75rem 0 0.5rem 1rem;
 }
 
 #department-list, #extra-service-list {
@@ -274,39 +274,51 @@ form {
     transition: background-color 0.3s;
 }
 
+/* Trending Departments Sliding List */
+
 .trending-depts {
-    padding: 0 1.5rem;
-    margin: 0 3rem;
+    margin: 0 1.5rem;
+}
+
+.trending-depts-array {
     overflow-y: auto;
-    white-space: nowrap;
     display: flex;
-    justify-content: space-around;
     align-items: center;
 }
 
 .trending-dept {
     text-align: center;
+    height: 35vh;
+    min-width: 22.5rem;
     padding: 1.5rem;
     margin: 1rem;
     border: 3px solid var(--product-border-color);
     border-radius: var(--product-border-radius);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     transition: background-color 0.3s, border-color 0.3s;
 }
 
 .trending-dept:hover {
-    background-color: var(--product-hover-background-color);
+    background-color: rgb(200, 199, 199);
     border-color: transparent;
 }
 
 .dept-image {
-    width: 20vh;
+    width: 15vh;
 }
 
 .dept-arrow {
-    height: 100px;
+    height: 10rem;
+    z-index: 99;
     border: none;
     background-color: var(--secondary-color);
     border-radius: 5px;
+    position: absolute;
+    margin-left: 100rem;
 }
 
 .products {
