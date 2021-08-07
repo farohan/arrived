@@ -32,6 +32,10 @@ p {
     font-size: 16px;
 }
 
+.bold {
+    font-weight: 900;
+}
+
 nav {
     background-color: var(--primary-color);
     display: flex;
@@ -203,10 +207,7 @@ form {
     background: darkgray;
 }
 
-#most-bought-decl,
-#trending-items-decl,
-#trending-depts-decl, 
-#products-decl {
+.declaration {
     font-size: 3rem;
     margin-top: 4rem;
     margin-left: 1rem;
@@ -276,6 +277,10 @@ form {
 
 /* Trending Departments Sliding List */
 
+.navigate {
+    text-align: center;
+}
+
 .trending-depts {
     margin: 0 1.5rem;
 }
@@ -311,23 +316,15 @@ form {
     width: 15vh;
 }
 
-.dept-arrow {
-    height: 10rem;
-    z-index: 99;
-    border: none;
-    background-color: var(--secondary-color);
-    border-radius: 5px;
-    position: absolute;
-    margin-left: 100rem;
-}
-
-.products {
+.products,
+.discounts {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-.product {
+.product,
+.discount {
     width: 20vw;
     margin-top: 2.5rem;
     max-height: 60rem;
@@ -342,7 +339,8 @@ form {
 
 .product:hover, 
 #most-bought-item:hover,
-.trending-item:hover {
+.trending-item:hover,
+.discount:hover {
     border-color: var(--product-hover-border-color);
     background-color: var(--product-hover-background-color);
 }
@@ -355,7 +353,8 @@ form {
 }
 
 .product-name,
-.trending-name {
+.trending-name,
+.discount-name {
     font-size: 2rem;
     margin-left: 5px;
     margin-right: 5px;
@@ -373,12 +372,19 @@ form {
     justify-content: space-between;
 }
 
-.price {
+.price,
+.discounted-price {
     font-weight: bold;
     font-size: 2rem;
     padding: 0 20px 0 20px;
     border-radius: 5px; 
     background-color: white;
+}
+
+.discounted-price {
+    font-weight: normal;
+    text-decoration: line-through;
+    margin-bottom: 0;
 }
 
 .star-rating, .shipping-cost {
