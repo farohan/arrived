@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="ecommerce, products, delivery, market, buy">
     <meta name="description" content="Everything you love and want, here at Arrived.">
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Arrived - More Products, More Efficient</title>
 </head>
@@ -118,7 +118,7 @@
             </ul>
         </section>
     </section>
-    <h2 id="most-bought-decl">Most Bought Item</h2>
+    <h2 class="declaration" id="most-bought-decl">Most Bought Item</h2>
     <div id="most-bought-item">
         <img class="most-bought-image" src="https://target.scene7.com/is/image/Target/GUEST_c6d1bfca-3003-4245-b46e-f7f94cf6908c?wid=488&hei=488&fmt=pjpeg" alt="A beach ball">
         <div id="most-bought-desc">
@@ -140,7 +140,7 @@
             <button class="addtocart">Add to Cart</button>
         </div>
     </div>
-    <h2 id="trending-items-decl">Trending Items</h2>
+    <h2 class="declaration" id="trending-items-decl">Trending Items</h2>
     <section class="trending-items">
         <div class="trending-item">
             <h2 class="trending-name">Harry Potter Paperback Boxed Set - Books 1 to 7</h2>
@@ -182,10 +182,9 @@
             <p class="shipping-cost">Free Shipping</p>
         </div>
     </section>
-    <h2 id="trending-depts-decl">Trending Departments</h2>
+    <h2 class="declaration" id="trending-depts-decl">Trending Departments</h2>
     <section class="trending-depts">
         <div class="trending-depts-array">
-            <button class="dept-arrow left-arrow"><img src="images/chevron-left.svg" alt=""></button>
             <div class="trending-dept">
                 <img class="dept-image" src="https://image.flaticon.com/icons/png/128/619/619032.png" alt="drawing of a house">
                 <h2 class="trending-dept-name">Home</h2>
@@ -210,10 +209,83 @@
                 <img class="dept-image" src="https://image.flaticon.com/icons/png/128/186/186239.png" alt="drawing of a smartphone">
                 <h2 class="trending-dept-name">Electronics</h2>
             </div>
-            <button class="dept-arrow right-arrow"><img src="images/chevron-right.svg" alt=""></button>
         </div>
     </section>
-    <h2 id="products-decl">Other Products You May Like</h2>
+
+    <p class="navigate navigate-trending-depts">Use <span class="bold">← and →</span> to navigate departments.</p>
+
+    <h2 class="declaration" id="deals-decl">Deals and Discounts</h2>
+    <section class="discounts">
+        <div class="discount">
+            <h2 class="discount-name">Fresh Cilantro</h2>
+            <img src="https://www.highmowingseeds.com/media/catalog/product/cache/6cbdb003cf4aae33b9be8e6a6cf3d7ad/5/0/5050.jpg" alt="fresh cilantro" class="product-img">
+            <p class="discounted-price">$3.49</p>
+            <p class="price">$1.99</p>
+            <p class="star-rating">
+                <i class="fa fa-star oranged"></i>
+                <i class="fa fa-star oranged"></i>
+                <i class="fa fa-star oranged"></i>
+                <i class="fa fa-star oranged"></i>
+                <i class="fa fa-star"></i>
+            </p>
+            <p class="shipping-cost">Free Shipping</p>
+        </div>
+        <div class="discount">
+            <h2 class="discount-name">128pcs Party Balloons Assorted</h2>
+            <img src="https://m.media-amazon.com/images/I/51SnhKqWujL._AC_SY550_.jpg" alt="party balloons" class="product-img">
+            <p class="discounted-price">$10.00</p>
+            <p class="price">$7.50</p>
+            <p class="star-rating">
+                <i class="fa fa-star oranged"></i>
+                <i class="fa fa-star oranged"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </p>
+        </div>
+        <div class="discount">
+            <h2 class="discount-name">Playstation 5 Console (PS5)</h2>
+            <img src="https://m.media-amazon.com/images/I/619BkvKW35L._SL1500_.jpg" alt="ps5" class="product-img">
+            <p class="discounted-price">$899.99</p>
+            <p class="price">$449.99</p>
+            <p class="star-rating">
+                <i class="fa fa-star oranged"></i>
+                <i class="fa fa-star oranged"></i>
+                <i class="fa fa-star oranged"></i>
+                <i class="fa fa-star oranged"></i>
+                <i class="fa fa-star oranged"></i>
+            </p>
+            <p class="shipping-cost">Shipping: $14.99</p>
+        </div>
+        <div class="discount">
+            <h2 class="discount-name">22-in Black Kettle Charcoal Grill</h2>
+            <img src="https://mobileimages.lowes.com/productimages/31c3b70d-90e7-45f0-8359-16915cfc791c/08970819.jpg?size=pdhi" alt="grill" class="product-img">
+            <p class="discounted-price">$139.99</p>
+            <p class="price">$114.99</p>
+            <p class="star-rating">
+                <i class="fa fa-star oranged"></i>
+                <i class="fa fa-star oranged"></i>
+                <i class="fa fa-star oranged"></i>
+                <i class="fa fa-star oranged"></i>
+                <i class="fa fa-star"></i>
+            </p>
+            <p class="shipping-cost">Free Shipping</p>
+        </div>
+        <div class="discount">
+
+        </div>
+        <div class="discount">
+
+        </div>
+        <div class="discount">
+
+        </div>
+        <div class="discount">
+            
+        </div>
+    </section>
+
+    <h2 class="declaration" id="products-decl">Other Products You May Like</h2>
     <section class="products">
         <div class="product" id="first-product">
             <h2 class="product-name">Hardwood Table</h2>
@@ -387,7 +459,7 @@
         </div>
     </footer>
 
-    <script src="app.js"></script>
-    <script src="products.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/products.js"></script>
 </body>
 </html>
