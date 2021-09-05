@@ -222,6 +222,7 @@ form {
     margin-right: 1rem;
     border: 3px solid var(--product-border-color);
     border-radius: var(--product-border-radius);
+    cursor: pointer;
     display: flex;
     justify-content: space-around;
     transition: background-color 0.3s;
@@ -269,6 +270,7 @@ form {
     overflow: auto;
     border: 3px solid var(--product-border-color);
     border-radius: var(--product-border-radius);
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -316,6 +318,33 @@ form {
     width: 15vh;
 }
 
+.newly-added {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.new-addition {
+    width: 30vw;
+    min-height: 15rem;
+    max-height: 60rem;
+    margin-top: 2.5rem;
+    overflow: auto;
+    border: 3px solid var(--product-border-color);
+    border-radius: var(--product-border-radius);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+#new-one,
+#new-two,
+#new-three {
+    margin-top: 0;
+}
+
 .products,
 .discounts {
     display: flex;
@@ -331,6 +360,7 @@ form {
     overflow: auto;
     border: 3px solid var(--product-border-color);
     border-radius: var(--product-border-radius);
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -340,7 +370,8 @@ form {
 .product:hover, 
 #most-bought-item:hover,
 .trending-item:hover,
-.discount:hover {
+.discount:hover,
+.new-addition:hover {
     border-color: var(--product-hover-border-color);
     background-color: var(--product-hover-background-color);
 }
