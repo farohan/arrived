@@ -6,39 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="ecommerce, products, delivery, market, buy">
     <meta name="description" content="Everything you love and want, here at Arrived.">
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Arrived - More Products, More Efficient</title>
 </head>
 <body>
     <a id="top"></a>
-    <nav>
-        <div class="logo-and-name">
-            <img src="images/shooting-star.png" alt="" id="rocket" height="65" width="65">
-            <h1 id="company-name">Arrived</h1>
-        </div>
-        <div class="besides-logo">
-            <div class="search-container">
-                <form>
-                    <input type="text" spellcheck="true" id="search-bar" placeholder="Search">
-                    <button type="submit" id="search-button"><img src="images/search-icon.svg" alt="" id="search-icon"></button>
-                </form>
-            </div>
-            <img src="images/shopping-cart.svg" alt="" id="shopping-cart" height="35">
-            <span id="account-box">
-                <img src="images/account-circle.svg" alt="" id="account" height="35">
-                <div id="account-name"></div>
-            </span>
-        </div> 
-    </nav>
-    <section class="navbar">
-        <div class="nav-item" onclick="openSideBar()">☰ All</div>
-        <div class="nav-item">Deals</div> 
-        <div class="nav-item">Trending</div> 
-        <div class="nav-item">New</div>
-        <div class="nav-item">Upcoming</div>
-    </section>
     <section id="all-content-div">
         <section class="departments">
             <div id="dep-close">
@@ -48,10 +22,6 @@
             <ul id="department-list">
                 <div class="department">
                     <li>Home + Garden</li>
-                    <img src="images/chevron-right.svg" class="right-arrow" alt="">
-                </div>
-                <div class="department">
-                    <li>Tools + Equipment</li>
                     <img src="images/chevron-right.svg" class="right-arrow" alt="">
                 </div>
                 <div class="department">
@@ -91,11 +61,7 @@
                     <img src="images/chevron-right.svg" class="right-arrow" alt="">
                 </div>
                 <div class="department">
-                    <li>Pet Supplies</li>
-                    <img src="images/chevron-right.svg" class="right-arrow" alt="">
-                </div>
-                <div class="department">
-                    <li>Industrial</li>
+                    <li>Tools / Equipment / Industrial</li>
                     <img src="images/chevron-right.svg" class="right-arrow" alt="">
                 </div>
             </ul>
@@ -117,6 +83,32 @@
                 </div>
             </ul>
         </section>
+    </section>
+    <nav>
+        <div class="logo-and-name">
+            <img src="images/shooting-star.png" alt="" id="rocket" height="65" width="65">
+            <h1 id="company-name">Arrived</h1>
+        </div>
+        <div class="besides-logo">
+            <div class="search-container">
+                <form>
+                    <input type="text" spellcheck="true" id="search-bar" placeholder="Search">
+                    <button type="submit" id="search-button"><img src="images/search-icon.svg" alt="" id="search-icon"></button>
+                </form>
+            </div>
+            <img src="images/shopping-cart.svg" alt="" id="shopping-cart" height="35">
+            <span id="account-box">
+                <img src="images/account-circle.svg" alt="" id="account" height="35">
+                <div id="account-name"></div>
+            </span>
+        </div> 
+    </nav>
+    <section class="navbar">
+        <div class="nav-item" onclick="openSideBar()">☰ All</div>
+        <div class="nav-item">Deals</div> 
+        <div class="nav-item">Trending</div> 
+        <div class="nav-item">New</div>
+        <div class="nav-item">Upcoming</div>
     </section>
     <h2 class="declaration" id="most-bought-decl">Most Bought Item</h2>
     <div id="most-bought-item">
@@ -333,7 +325,7 @@
     <h2 class="declaration" id="newly-added-decl">Newly-Added Products</h2>
     <section class="newly-added">
         <div class="new-addition" id="new-one">
-
+            
         </div>
         <div class="new-addition" id="new-two">
 
@@ -526,7 +518,7 @@
         </div>
     </footer>
 
-    <script src="app.js"></script>
-    <script src="products.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/products.js"></script>
 </body>
 </html>
