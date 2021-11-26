@@ -46,11 +46,61 @@ const threeSeatSofa = new Product(
 
 // Clothing / Fashion / Jewelry
 
+const menWinterJacket = new Product(
+    "Men's Waterproof Winter Jacket",
+    'https://ae01.alicdn.com/kf/H40ca4e3b5f3d412a80485cade1dce632u/2020-New-Waterproof-Winter-Jacket-Men-Hoodied-Parka-Men-Warm-Winter-Coat-Men-Thicken-Zipper-Camouflage.jpg_Q90.jpg_.webp',
+    'blue winter jacket',
+    19.99,
+    '',
+    1.25
+);
+
+const strawHat = new Product(
+    'Straw Hat for All',
+    'https://mobileimages.lowes.com/productimages/49047d7c-2993-4ad9-8def-54364e61b80e/08532487.jpg?size=pdhi',
+    'yellow straw hat',
+    10.99,
+    '',
+    0
+);
+
+const poloShirt = new Product(
+    'Short Sleeve Polo Shirt for Summer',
+    'https://m.media-amazon.com/images/I/51VRoS04WjL._AC_UX342_.jpg',
+    'polo shirt for men',
+    14.99,
+    '',
+    0
+);
+
 // Grocery
 
-// Movies + Entertainment
+const orangePeachMangoJuice = new Product(
+    "Trader Joe's Orange, Peach, and Mango Juice",
+    'https://i.pinimg.com/originals/b6/c0/02/b6c0025b4806684930c09f1490d7e93e.jpg',
+    "Trader Joe's Orange Peach and Mango Juice (container shown)",
+    2.79,
+    '',
+    0.21
+);
 
-// Parties + Celebrations
+const boxOfApples = new Product(
+    'Bushel of Fresh, Red Apples',
+    'https://st2.depositphotos.com/4917295/12363/i/950/depositphotos_123634562-stock-photo-wooden-box-full-of-fresh.jpg',
+    'wooden box of apples',
+    9.99,
+    '',
+    0
+);
+
+const milkGallon = new Product(
+    '1 Gallon of Organic Whole Milk',
+    'https://bjs.scene7.com/is/image/bjs/147476?$bjs-Zoom$',
+    'gallon of milk',
+    3.19,
+    '',
+    0
+);
 
 // Books
 
@@ -99,6 +149,15 @@ const appleIpadMini = new Product(
     399.99,
     '',
     5.00
+);
+
+const appleDesktop = new Product(
+    'Apple iMac 512GB with Retina Display (5.0 GHz)',
+    'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/imac-27-selection-hero-202008?wid=904&hei=840&fmt=jpeg&qlt=80&.v=1594932848000',
+    'apple imac computer',
+    2,299.99,
+    '',
+    25.00
 );
 
 // Sports + Fitness Equipment
@@ -181,10 +240,30 @@ const magnifyingGlass = new Product(
 
 // Industrial
 
+const batterySet = new Product(
+    'Duracell Ultra AAA Batteries (8 Total)',
+    'https://m.media-amazon.com/images/I/51yOzDWHhzL.jpg',
+    'duracell batteries 8',
+    7.99,
+    '',
+    0
+);
 
-const allProducts = [hardwoodTable, tableLamp, harryPotterSeven, 
-    msSurfaceComputer, appleIpadMini, nikeAirMaxMens, 
-    fitbitVersaTwo, beachBall, caterpillarDumpTruck, 
-    teddyBear, ticonderogaPencils, magnifyingGlass,
-    monsterTruck, threeSeatSofa, lordOfTheRings,
-    mobyDick];
+const toolBox = new Product(
+    '16 Inch Toolbox - Black and Yellow',
+    'https://www.stanleytools.com/NA/product/images/3000x3000x96/STST16410/STST16410_1.jpg',
+    'yellow and black stanley toolbox',
+    49.99,
+    '',
+    0
+);
+
+
+//All products in one array - easy for selection and randomization
+
+const allProducts = [hardwoodTable, tableLamp, threeSeatSofa, menWinterJacket, strawHat, poloShirt, orangePeachMangoJuice,
+    boxOfApples, milkGallon, harryPotterSeven, lordOfTheRings, mobyDick, msSurfaceComputer, appleIpadMini, appleDesktop,
+    nikeAirMaxMens, fitbitVersaTwo, beachBall, caterpillarDumpTruck, teddyBear, monsterTruck, ticonderogaPencils,
+    magnifyingGlass, batterySet, toolBox];
+
+console.log(allProducts);
