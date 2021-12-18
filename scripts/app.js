@@ -14,3 +14,9 @@ function closeSideBar() {
     sideMenu.style.width = "0px";
 }
 
+//Applying data from products.js to index.html
+
+// import allProducts from "./products";
+
+// console.log(allProducts);
+// console.log(allProducts.length);
