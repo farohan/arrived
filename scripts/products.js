@@ -261,9 +261,8 @@ const toolBox = new Product(
 
 //All products in one array - easy for selection and randomization
 
-const allProducts = [hardwoodTable, tableLamp, threeSeatSofa, menWinterJacket, strawHat, poloShirt, orangePeachMangoJuice,
+export const allProducts = [hardwoodTable, tableLamp, threeSeatSofa, menWinterJacket, strawHat, poloShirt, orangePeachMangoJuice,
     boxOfApples, milkGallon, harryPotterSeven, lordOfTheRings, mobyDick, msSurfaceComputer, appleIpadMini, appleDesktop,
     nikeAirMaxMens, fitbitVersaTwo, beachBall, caterpillarDumpTruck, teddyBear, monsterTruck, ticonderogaPencils,
     magnifyingGlass, batterySet, toolBox];
 
-export {allProducts};
