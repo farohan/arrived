@@ -137,7 +137,7 @@ const msSurfaceComputer = new Product(
     'Microsoft Surface Laptop Computer 13.5" Touch-Screen',
     'https://images-na.ssl-images-amazon.com/images/I/71h6PpGaz9L._AC_SL1500_.jpg',
     'Microsoft Surface laptop computer',
-    1,149.99,
+    1149.99,
     '<i class="fa fa-star oranged"></i> <i class="fa fa-star oranged"></i> <i class="fa fa-star oranged"></i> <i class="fa fa-star oranged"></i> <i class="fa fa-star oranged"></i>',
     0
 );
@@ -155,7 +155,7 @@ const appleDesktop = new Product(
     'Apple iMac 512GB with Retina Display (5.0 GHz)',
     'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/imac-27-selection-hero-202008?wid=904&hei=840&fmt=jpeg&qlt=80&.v=1594932848000',
     'apple imac computer',
-    2,299.99,
+    2299.99,
     '<i class="fa fa-star oranged"></i> <i class="fa fa-star oranged"></i> <i class="fa fa-star oranged"></i> <i class="fa fa-star oranged"></i> <i class="fa fa-star oranged"></i>',
     25.00
 );
