@@ -222,7 +222,7 @@ form {
 /* Home Page Styles */
 
 .most-bought-image {
-    width: 20vw;
+    width: 25vw;
     object-fit: cover;
 }
 
@@ -318,6 +318,20 @@ form {
     justify-content: space-around;
 }
 
+.discount {
+    width: 20vw;
+    margin-top: 2.5rem;
+    max-height: 60rem;
+    overflow: auto;
+    border: 3px solid var(--product-border-color);
+    border-radius: var(--product-border-radius);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
 #first-product,
 #second-product,
 #third-product,
@@ -362,10 +376,6 @@ form {
     transition: background-color 0.3s;
 }
 
-.whole-product:hover {
-    background-color: var(--product-hover-background-color);
-}
-
 .thirds-product {
     width: 30vw;
     min-height: 15rem;
@@ -379,10 +389,6 @@ form {
     flex-direction: column;
     align-items: center;
     transition: background-color 0.3s;
-}
-
-.thirds-product:hover {
-    background-color: var(--product-hover-background-color);
 }
 
 .fourths-product {
@@ -399,7 +405,9 @@ form {
     transition: background-color 0.3s;
 }
 
-.fourths-product:hover {
+.fourths-product:hover,
+.thirds-product:hover,
+.whole-product:hover {
     background-color: var(--product-hover-background-color);
 }
 
